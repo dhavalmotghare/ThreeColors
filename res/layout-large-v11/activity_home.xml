@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:padding="@dimen/multipane_half_padding" >
+
+    <!-- TODO: switch to GridLayout -->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/multipane_half_padding"
+            android:layout_marginRight="@dimen/multipane_half_padding"
+            android:layout_marginTop="@dimen/multipane_half_padding"
+            android:text="@string/title_upcoming" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/multipane_half_padding"
+            android:layout_weight="1" >
+
+            <fragment
+                android:id="@+id/fragment_upcoming_movies"
+                android:name="co.in.threecolors.ui.fragments.UpComingMoviesFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <fragment
+            android:id="@+id/fragment_notification"
+        	android:name="co.in.threecolors.ui.fragments.NotificationFragment"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/notification_height"
+            android:layout_margin="@dimen/multipane_half_padding" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/multipane_half_padding"
+            android:layout_marginRight="@dimen/multipane_half_padding"
+            android:layout_marginTop="@dimen/multipane_half_padding"
+            android:text="@string/title_now_showing" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/multipane_half_padding"
+            android:layout_weight="1" >
+
+            <fragment
+                android:id="@+id/fragment_now_playing"
+                android:name="co.in.threecolors.ui.fragments.NowPlayingMoviesFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/entity_movie"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dip" >
+
+        <ImageView
+            android:id="@+id/movie_backdrop"
+            android:layout_width="match_parent"
+            android:layout_height="150dip"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/text_backdrop"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_image_empty" />
+
+        <FrameLayout
+            android:id="@+id/poster_overlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dip"
+                android:contentDescription="@string/text_poster"
+                android:scaleType="centerInside" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/movie_title"
+        style="@style/MovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="5dp"
+        android:padding="2dp"
+        android:textIsSelectable="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/divider_horizontal_bright" />
+
+    <TextView
+        android:id="@+id/movie_release_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="false"
+        android:layout_marginRight="5dp"
+        android:layout_gravity="right"
+        android:padding="2dp"
+        android:textColor="@color/stream_reshare_line_color"
+        android:textSize="@dimen/text_size_small" />
+
+    <!--
+         <TextView
+        android:id="@+id/movie_overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:padding="2dp"
+        android:text="22 March 2013 10:32"
+        android:textColor="@color/stream_content_color"
+        android:textSize="10dp" />
+    -->
+
+</LinearLayout>

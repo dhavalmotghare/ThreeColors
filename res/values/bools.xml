@@ -1,0 +1,5 @@
+
+<resources>
+    <bool name="has_honeycomb">false</bool>
+    <bool name="has_ics">false</bool>
+</resources>

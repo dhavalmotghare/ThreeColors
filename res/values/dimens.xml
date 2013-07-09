@@ -1,0 +1,41 @@
+<resources>
+
+    <!-- UI elements -->
+    <dimen name="notification_height">64dp</dimen>
+    <dimen name="notification_item_padding">10dp</dimen>
+    <dimen name="notification_button_right_padding">20dp</dimen>
+    <dimen name="tab_height">48dp</dimen>
+    <dimen name="track_icon_width">32dp</dimen>
+    <dimen name="track_icon_padding">2dp</dimen>
+    <dimen name="action_button_min_width">56dp</dimen>
+    <dimen name="multipane_half_padding">8dp</dimen>
+    <dimen name="multipane_padding">16dp</dimen>
+
+    <!-- body content -->
+    <dimen name="element_spacing_normal">8dp</dimen>
+    <dimen name="content_padding_normal">16dp</dimen>
+    <dimen name="text_size_very_small">8sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_medium">14sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">18sp</dimen>
+    <dimen name="text_size_diff_large_small">6sp</dimen>
+
+    <!-- stream activity item -->
+    <dimen name="stream_name_text_size">16sp</dimen>
+    <dimen name="stream_original_author_name_text_size">14sp</dimen>
+    <dimen name="stream_content_text_size">14sp</dimen>
+    <dimen name="stream_feedback_text_size">12sp</dimen>
+    <dimen name="stream_fav_icon_size">14dip</dimen>
+    <dimen name="stream_timestamp_size">12dip</dimen>
+    <dimen name="stream_like_count_size">16dip</dimen>
+    <dimen name="stream_author_image_padding">5dip</dimen>
+    
+    <dimen name="social_bar_padding">2dip</dimen>
+    <dimen name="social_bar_image_size">16dip</dimen>
+    
+    
+    <dimen name="bottom_toolbar_padding">30dip</dimen>
+    <dimen name="bottom_toolbar_height">120dip</dimen>
+
+</resources>

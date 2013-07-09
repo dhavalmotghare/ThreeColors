@@ -1,0 +1,31 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <TextView
+        android:id="@+id/empty_message"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/empty"
+        android:textColor="@color/loading_text_color"
+        android:visibility="gone" />
+
+    <GridView
+        android:id="@+id/my_movies_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:columnWidth="160dp"
+        android:gravity="center"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:visibility="visible" >
+    </GridView>
+
+</LinearLayout>
