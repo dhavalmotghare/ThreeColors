@@ -35,9 +35,7 @@ public class NowPlayingMoviesFragment extends Fragment implements LoaderManager.
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         movieListAdapter = new MovielistAdapter(getActivity(), UIUtils.getImageLoader(getActivity()));
-
         if (savedInstanceState == null) {
         }
     }
@@ -130,7 +128,6 @@ public class NowPlayingMoviesFragment extends Fragment implements LoaderManager.
         return handled;
     }
 
-    @Override
     public boolean onCreateActionMode(ActionMode mode, Menu menu) {
         // TODO Auto-generated method stub
         return false;

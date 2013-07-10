@@ -115,6 +115,7 @@ public class MovieFetcherService extends Service {
                     e.printStackTrace();
                     Log.d(TAG, " Something went wrong while syncing " + e.toString());
                 }
+                stopSelf();
             };
         }.start();
         return START_STICKY;
@@ -274,7 +275,7 @@ public class MovieFetcherService extends Service {
         Uri uri = Uri.parse(MOVIE_UPDATE_INTENT_URI);
         Intent intent = new Intent(MOVIE_UPDATE_INTENT, uri);
         intent.addCategory(Intent.CATEGORY_DEFAULT);
-        Log.d(TAG, "Broadcasting tweet intent! ");
+        Log.d(TAG, "Broadcasting update intent! ");
         getApplicationContext().sendBroadcast(intent);
     }
 
