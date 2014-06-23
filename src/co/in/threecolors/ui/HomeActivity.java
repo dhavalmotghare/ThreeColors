@@ -73,7 +73,6 @@ public class HomeActivity extends BaseActivity implements ActionBar.TabListener,
             return;
         }
 
-        UIUtils.enableDisableActivities(this);
         setContentView(R.layout.activity_home);
 
         FragmentManager fm = getSupportFragmentManager();
@@ -182,17 +181,6 @@ public class HomeActivity extends BaseActivity implements ActionBar.TabListener,
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
-        /**
-         * Since the pager fragments don't have known tags or IDs, the only way
-         * to persist the reference is to use putFragment/getFragment. Remember,
-         * we're not persisting the exact Fragment instance. This mechanism
-         * simply gives us a way to persist access to the 'current' fragment
-         * instance for the given fragment (which changes across orientation
-         * changes).
-         * 
-         * The outcome of all this is that the "Refresh" menu button refreshes
-         * the stream across orientation changes.
-         */
         if (myMoviesFragment != null) {
             getSupportFragmentManager().putFragment(outState, "now_playing_fragment", nowPlayingMoviesFragment);
         }

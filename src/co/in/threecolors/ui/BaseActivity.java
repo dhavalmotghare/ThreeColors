@@ -1,7 +1,5 @@
 package co.in.threecolors.ui;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.NavUtils;
@@ -39,24 +37,6 @@ public abstract class BaseActivity extends FragmentActivity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	/**
-	 * Converts a fragment arguments bundle into an intent.
-	 */
-	public static Intent fragmentArgumentsToIntent(Bundle arguments) {
-		Intent intent = new Intent();
-		if (arguments == null) {
-			return intent;
-		}
-
-		final Uri data = arguments.getParcelable("_uri");
-		if (data != null) {
-			intent.setData(data);
-		}
-
-		intent.putExtras(arguments);
-		intent.removeExtra("_uri");
-		return intent;
-	}
 
 	@Override
 	protected void onStart() {
